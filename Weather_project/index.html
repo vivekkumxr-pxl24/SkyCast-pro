@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Pro | Interactive Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="top-nav">
+            <div class="logo">SkyCast <span>Pro</span></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search city..." id="cityInput">
+                <button id="searchBtn"><i>🔍</i></button>
+                <button id="locationBtn"><i>📍</i></button>
+            </div>
+        </nav>
+
+        <div class="error-msg" id="error">Invalid City Name!</div>
+
+        <main class="weather-content" id="weatherContent">
+            
+            <section class="hero-section">
+                <div class="main-temp-wrapper">
+                    <img src="" class="main-icon" id="mainIcon">
+                    <h1 class="current-temp">--°</h1>
+                    <div class="location-box">
+                        <h2 class="city-name">--</h2>
+                        <p class="date-today">--</p>
+                    </div>
+                </div>
+                <p class="weather-desc">--</p>
+            </section>
+
+            <section class="details-grid">
+                <div class="widget">
+                    <p class="label">Feels Like</p>
+                    <h3 class="feels-like">--°</h3>
+                </div>
+                <div class="widget">
+                    <p class="label">Humidity</p>
+                    <h3 class="humidity">--%</h3>
+                </div>
+                <div class="widget">
+                    <p class="label">Air Quality</p>
+                    <h3 class="aqi">--</h3>
+                </div>
+                <div class="widget">
+                    <p class="label">Wind Speed</p>
+                    <h3 class="wind">-- km/h</h3>
+                </div>
+                <div class="widget">
+                    <p class="label">Sunrise</p>
+                    <h3 class="sunrise">--:--</h3>
+                </div>
+                <div class="widget">
+                    <p class="label">Sunset</p>
+                    <h3 class="sunset">--:--</h3>
+                </div>
+            </section>
+
+            <section class="forecast-section">
+                <h3>Weekly Outlook</h3>
+                <div class="forecast-wrapper" id="forecastList">
+                    </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
